@@ -5,11 +5,16 @@ $str2 = "Vive";
 $str3 = "!";
  echo $str2 .' '. $str .' '. $str3;
 
- $val = "\n 6";
- echo $val;
+ $val = "6";
+$val1 = "4";
+$toto = $val+$val1;
 
+ echo $toto;
 
-
- $myBool = "true";
- echo $myBool;
+$Mybool=TRUE;
+echo $Mybool . "\n";
+var_dump($Mybool);
+$Mybool1=false;
+echo $Mybool1;
+var_dump($Mybool1);
 ?>

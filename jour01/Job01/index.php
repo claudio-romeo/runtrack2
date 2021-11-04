@@ -1,20 +1,22 @@
 <?php
 
-$str = "LaPlateforme";
-$str2 = "Vive";
-$str3 = "!";
- echo $str2 .' '. $str .' '. $str3;
+$str = 'LaPlateforme';
+$str2 = 'Vive';
+$str3 = '!';
+echo $str2 . ' ' . $str . ' ' . $str3;
 
- $val = "6";
-$val1 = "4";
-$toto = $val+$val1;
+$val = 6;
+$vale = 3;
 
- echo $toto;
+$toto = $val + $vale;
 
-$Mybool=TRUE;
-echo $Mybool . "\n";
+echo $toto . '<br/>';
+
+$Mybool = true;
+echo $Mybool . '<br/>';
 var_dump($Mybool);
-$Mybool1=false;
+$Mybool1 = false;
 echo $Mybool1;
 var_dump($Mybool1);
+
 ?>

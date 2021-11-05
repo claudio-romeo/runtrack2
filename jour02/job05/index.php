@@ -1,10 +1,17 @@
-<?php 
+<?php
 
-while 1:
-    $n=input("veuillez entrer un entier supérieur à 1: ")
-    if n>1: 
-        break
+set_time_limit(0);
 
-        for i in range(1,n+1);
-        nbdiv=0
+$nombre=1000; //Variable permettant d'afficher la liste des nombres premiers inférieurs à $nombre
+
+echo "2<br>";
+for($i=2;$i<$nombre;$i++)
+{
+	for($j=2;$j<$i;$j++)
+	{
+		if(($i%$j)==0) break;
+		if($j==($i-1)) echo "$i<br>"; 
+	}
+}
+
 ?>

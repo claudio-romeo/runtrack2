@@ -1,21 +1,13 @@
 
 <?php
-
-
-
 $nombre = ['200', '204', '98', '404', '459', '173', '171'];
- {
 
-if ($nombre%2 == 1) 
-      echo "$nombre est impair";
-     else
-      echo "$nombre est pair";
+foreach ($nombre as $value) {
+    if ($value%2 == 0) {
+        echo $value . 'est paire <br/>' ;
+    } else {
+        echo $value . 'est impaire <br/>';
+    }
 }
-echo '<pre>';
-var_dump($nombre);
-echo '</pre>';
-
-
-
 
 

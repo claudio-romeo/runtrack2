@@ -1,16 +1,21 @@
 <?php
-$cookiefin = time ()+3600*24*365;
-setcookie('nbvisites', string $value = "0", $cookiefin );
+ $visites = 0;
+
+ if (isset($_COOKIE['nbvisites'])) {
+     $visites = $_COOKIE['nbvisites'];
+     $visites++;
+ }
+setcookie('nbvisites',  $visites );
 var_dump($_COOKIE);
 
-if (isset($_COOKIE['nbvisites']))
+/*if (isset($_COOKIE['nbvisites']))
 {
-    echo " l'élèment existe bien" . $_COOKIE['nbvisites'];
+    echo " l'élèment existe bien " . $_COOKIE['nbvisites'];
 
 }
 else {
     echo "L'élèment n'éxiste pas !";
-}
+}*/
 
 ?>
 
@@ -27,12 +32,10 @@ else {
 
 
     <?php
-if (isset($_COOKIE['nbvisites'])) 
-{
-    $_COOKIE["nbvisites"]++;
-} 
+   
 
-echo 'Il y a eu avant reset : ' .htmlspecialchars ($_COOKIE['nbvisites']++) . ' visites';
+
+echo 'Il y a eu avant reset : ' .htmlspecialchars ($visites) . ' visites';
 
 if (isset($_POST['reset'])) 
 
